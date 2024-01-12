@@ -12,6 +12,8 @@ for i in df["day"]:
         print("yes")
         break
 else:
+    chrome_option=webdriver.ChromeOptions()
+    chrome_option.add_argument("headless")
     driver=webdriver.Chrome()
     driver.implicitly_wait(10)
     driver.maximize_window()
