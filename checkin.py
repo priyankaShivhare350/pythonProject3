@@ -12,6 +12,7 @@ for i in df["day"]:
         print("yes")
         break
 else:
+    print("its not holiday today")
     driver=webdriver.Chrome()
     driver.implicitly_wait(10)
     driver.maximize_window()
